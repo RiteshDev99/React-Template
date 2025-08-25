@@ -103,9 +103,3 @@ src/
 * [Redux Toolkit Docs](https://redux-toolkit.js.org/)
 * [React Router Docs](https://reactrouter.com/)
 
-```
-
----
-
-👉 Do you also want me to add a **`.env.example`** file in this template (like `VITE_API_URL`) so new users know what environment variables they should configure?
-```
