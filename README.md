@@ -1,13 +1,111 @@
-# React + Vite
+# ⚡ React + Vite + Tailwind + Redux + Router Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and scalable starter template using **React + Vite**, styled with **Tailwind CSS**, state management via **Redux Toolkit**, and navigation powered by **React Router**.  
+Designed for building modern React applications with best practices out of the box.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Installation
 
-## Expanding the ESLint configuration
+```sh
+npm install
+# or
+yarn install
+# or
+pnpm install
+````
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# React-Template
+---
+
+## 🚀 Development
+
+Start the development server with hot reload:
+
+```sh
+npm run dev
+```
+
+Your app will be available at **[http://localhost:5173](http://localhost:5173)**.
+
+---
+
+## 📤 Build
+
+Create a production-ready build:
+
+```sh
+npm run build
+```
+
+Preview the built app locally:
+
+```sh
+npm run preview
+```
+
+---
+
+## 🌐 Environment Variables
+
+Add your environment variables in a `.env` file at the project root:
+
+```env
+VITE_API_URL=https://api.example.com
+```
+
+Use them in your code with `import.meta.env`:
+
+```js
+const apiUrl = import.meta.env.VITE_API_URL
+```
+
+---
+
+## 🗂 File Structure
+
+```
+src/
+ ├── assets/             # Images, fonts, static files
+ ├── components/         # Reusable UI components
+ │   ├── container/      # Layout wrapper components
+ │   ├── footer/         # Footer UI
+ │   ├── header/         # Header UI
+ │   ├── pages/          # Page-level components
+ │   │   └── Home.jsx
+ │   ├── ui/             # Small reusable UI parts (buttons, inputs, etc.)
+ │   └── index.js        # Barrel export for components
+ ├── conf/               # Configurations & environment helpers
+ │   └── conf.js
+ ├── store/              # Redux store setup
+ │   ├── features/       # Redux slices
+ │   └── store.js
+ ├── App.jsx             # Root component
+ ├── index.css           # Global styles (Tailwind)
+ └── main.jsx            # Application entry point
+```
+
+---
+
+## 📚 Included Libraries
+
+* ⚡ **Vite** – Lightning-fast build tool
+* 🎨 **Tailwind CSS** – Utility-first styling
+* 🔄 **Redux Toolkit** – State management
+* 🌍 **React Router** – Client-side routing
+
+---
+
+## 📚 Useful Links
+
+* [React Docs](https://react.dev/)
+* [Vite Docs](https://vitejs.dev/)
+* [Tailwind CSS Docs](https://tailwindcss.com/)
+* [Redux Toolkit Docs](https://redux-toolkit.js.org/)
+* [React Router Docs](https://reactrouter.com/)
+
+```
+
+---
+
+👉 Do you also want me to add a **`.env.example`** file in this template (like `VITE_API_URL`) so new users know what environment variables they should configure?
+```
